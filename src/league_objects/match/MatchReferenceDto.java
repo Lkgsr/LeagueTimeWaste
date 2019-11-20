@@ -1,4 +1,4 @@
-package league_objects;
+package league_objects.match;
 
 import org.json.JSONException;
 import org.json.JSONObject;

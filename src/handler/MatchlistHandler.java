@@ -1,7 +1,7 @@
 package handler;
 
 import api.request;
-import league_objects.MatchlistDto;
+import league_objects.match.MatchlistDto;
 
 public class MatchlistHandler {
     private String url;

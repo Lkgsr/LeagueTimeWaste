@@ -1,7 +1,7 @@
 import handler.MatchlistHandler;
 import handler.SummonerHandler;
-import league_objects.MatchlistDto;
 import league_objects.Summoner;
+import league_objects.match.MatchlistDto;
 
 public class debug {
     public static void main(String[] args) {

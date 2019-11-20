@@ -1,10 +1,9 @@
-package league_objects;
+package league_objects.match;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MatchlistDto {
