@@ -1,5 +1,8 @@
 package league_objects;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 public class MatchReferenceDto {
     private String lane, platformId, role;
     private int champion, season, queue;
@@ -15,6 +18,17 @@ public class MatchReferenceDto {
         this.queue = queue;
         this.gameId = gameId;
         this.timestamp = timestamp;
+    }
+
+    public MatchReferenceDto(JSONObject match) throws JSONException {
+        this.lane = match.getString("lane");
+        this.platformId = match.getString("platformId");
+        this.role = match.getString("role");
+        this.champion = match.getInt("champion");
+        this.season = match.getInt("season");
+        this.queue = match.getInt("queue");
+        this.gameId = match.getLong("gameId");
+        this.timestamp = match.getLong("timestamp");
     }
 
     @Override

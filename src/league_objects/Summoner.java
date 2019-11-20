@@ -42,4 +42,31 @@ public class Summoner {
                 '}';
     }
 
+    public int getProfileIconId() {
+        return profileIconId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getPuuid() {
+        return puuid;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getAccountId() {
+        return accountId;
+    }
+
+    public long getSummonerLevel() {
+        return summonerLevel;
+    }
+
+    public long getRevisionDate() {
+        return revisionDate;
+    }
 }
