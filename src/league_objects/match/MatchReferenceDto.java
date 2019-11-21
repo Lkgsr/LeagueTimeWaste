@@ -44,4 +44,36 @@ public class MatchReferenceDto {
                 ", timestamp=" + timestamp +
                 '}';
     }
+
+    public String getLane() {
+        return lane;
+    }
+
+    public String getPlatformId() {
+        return platformId;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public int getChampion() {
+        return champion;
+    }
+
+    public int getSeason() {
+        return season;
+    }
+
+    public int getQueue() {
+        return queue;
+    }
+
+    public long getGameId() {
+        return gameId;
+    }
+
+    public long getTimestamp() {
+        return timestamp;
+    }
 }

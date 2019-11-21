@@ -43,4 +43,20 @@ public class MatchlistDto {
                 ", endIndex=" + endIndex +
                 '}';
     }
+
+    public MatchReferenceDto[] getMatches() {
+        return matches;
+    }
+
+    public int getTotalGames() {
+        return totalGames;
+    }
+
+    public int getStartIndex() {
+        return startIndex;
+    }
+
+    public int getEndIndex() {
+        return endIndex;
+    }
 }

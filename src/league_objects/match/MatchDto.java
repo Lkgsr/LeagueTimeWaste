@@ -14,7 +14,7 @@ public class MatchDto {
     private ParticipantDto[] participants;
 
     public MatchDto(JSONObject match) throws JSONException {
-        this.seasonId = match.getInt("seasonID");
+        this.seasonId = match.getInt("seasonId");
         this.queueId = match.getInt("queueId");
         this.mapId = match.getInt("mapId");
         this.gameId = match.getLong("gameId");
@@ -40,5 +40,57 @@ public class MatchDto {
                 ", gameMode='" + gameMode + '\'' +
                 ", gameVersion='" + gameVersion + '\'' +
                 '}';
+    }
+
+    public int getSeasonId() {
+        return seasonId;
+    }
+
+    public int getQueueId() {
+        return queueId;
+    }
+
+    public int getMapId() {
+        return mapId;
+    }
+
+    public long getGameId() {
+        return gameId;
+    }
+
+    public long getGameDuration() {
+        return gameDuration;
+    }
+
+    public long getGameCreation() {
+        return gameCreation;
+    }
+
+    public String getPlatformId() {
+        return platformId;
+    }
+
+    public String getGameType() {
+        return gameType;
+    }
+
+    public String getGameMode() {
+        return gameMode;
+    }
+
+    public String getGameVersion() {
+        return gameVersion;
+    }
+
+    public ParticipantDto[] getParticipantIdentities() {
+        return participantIdentities;
+    }
+
+    public TeamStatsDto[] getTeams() {
+        return teams;
+    }
+
+    public ParticipantDto[] getParticipants() {
+        return participants;
     }
 }
