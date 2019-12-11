@@ -41,15 +41,18 @@ public class request {
         // Send and read request
 
         int responseCode = con.getResponseCode();
-        BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+        //TODO responseCode checking !
+        if (responseCode == 200) {
+            BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
 
-        StringBuilder response = new StringBuilder();
-        while ((inputLine = in.readLine()) != null) {
-            response.append(inputLine);
+            StringBuilder response = new StringBuilder();
+            while ((inputLine = in.readLine()) != null) {
+                response.append(inputLine);
+            }
+            in.close();
+
+            return new JSONObject(response.toString());
         }
-        in.close();
-
-        return new JSONObject(response.toString());
-
+        return new JSONObject();
     }
 }

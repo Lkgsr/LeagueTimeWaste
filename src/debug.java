@@ -37,8 +37,8 @@ public class debug {
             DateTime dt1 = t.convert_timestamp_to_etc_date(longest_timestamp).toDateTime();
             DateTime dt2 = t.convert_timestamp_to_etc_date(shortest_timestamp).toDateTime();
             System.out.println(time);
-            System.out.println("days between " +dt2.toDate() + " --- " + dt1.toDate() +" are " + Days.daysBetween(dt2, dt1).getDays());
-            System.out.println("days played in this time " + ((time/60)/60)/24);
+            System.out.println("days between " + dt2.toDate() + " --- " + dt1.toDate() + " are " + Days.daysBetween(dt2, dt1).getDays());
+            System.out.println("days played in this time " + ((time / 60) / 60));
         } catch (Exception e) {
             e.printStackTrace();
         }
